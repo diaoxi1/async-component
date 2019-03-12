@@ -1,1 +1,7 @@
 
+# React 异步加载component
+- 使用方法
+- 导入插件
+import AsyncComponent from '../async-component';//异步加载组件
+- 导入模板 在需要的时候会自动加载
+var Home = AsyncComponent(()=>import("../components/Home"));
